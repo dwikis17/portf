@@ -1,6 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Github, Linkedin, } from "lucide-react"
 import { motion } from "motion/react"
 import LeetcodeIcon from './leet-code'
 import {

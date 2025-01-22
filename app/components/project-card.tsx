@@ -9,7 +9,7 @@ import Image from "next/image"
 interface ProjectCardProps {
     title: string
     description: string
-    image: any
+    image: string
     technologies: string[]
     githubLink?: string
     liveLink: string

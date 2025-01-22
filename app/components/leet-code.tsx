@@ -1,7 +1,8 @@
 import * as React from "react";
-import { motion } from "framer-motion";
+import { motion, SVGMotionProps } from "framer-motion";
 
-const LeetCodeIcon = (props: any) => (
+type LeetCodeIconProps = SVGMotionProps<SVGSVGElement>;
+const LeetCodeIcon: React.FC<LeetCodeIconProps> = (props) => (
     <motion.svg
         width="24px"
         height="24px"

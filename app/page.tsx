@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import HeroSection from './components/HeroSection'
 import { ProjectShowcase } from "./components/project-showcase";
 export default function Home() {
