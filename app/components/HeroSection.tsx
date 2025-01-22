@@ -80,7 +80,7 @@ export default function HeroSection() {
                         variants={itemVariants}
                         className="text-3xl font-black text-white xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-left"
                     >
-                        Hello, I'm <span className="text-orange-400">Dwiki</span>
+                        Hello, I&apos;m <span className="text-orange-400">Dwiki</span>
                         <br />
                         a long-life learner <span className="text-orange-400">Software Engineer</span>
                     </motion.h2>
