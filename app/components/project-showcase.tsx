@@ -50,7 +50,7 @@ export function ProjectShowcase() {
     };
 
     return (
-        <section id="projects" className="py-16 rounded-xl shadow-xl">
+        <section id="projects" className="py-16 rounded-xl ">
             <div className="container mx-auto px-4">
                 <motion.h2
                     initial={{ opacity: 0, y: 50 }}

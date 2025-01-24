@@ -1,6 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, } from "lucide-react"
+import { Github, Linkedin, BookOpen, FileUser } from "lucide-react"
 import { motion } from "motion/react"
 import LeetcodeIcon from './leet-code'
 import {
@@ -109,7 +109,7 @@ export default function HeroSection() {
                                 className="w-full bg-blue-600 hover:bg-blue-700"
                                 onClick={() => window.open('https://drive.google.com/file/d/1wKyyBXpOTRUwBKlLtJJoUwp_BQgeLonr/view?usp=sharing')}
                             >
-                                Resume
+                                Resume <FileUser />
                             </Button>
                         </motion.div>
                         <motion.div
@@ -118,7 +118,7 @@ export default function HeroSection() {
                             className="w-full"
                         >
                             <Button variant="outline" size="lg" className="w-full" onClick={() => window.open('https://dev.to/dwikis17')}>
-                                Posts
+                                Read Article <BookOpen />
                             </Button>
                         </motion.div>
                     </motion.div>
