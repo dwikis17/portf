@@ -1,6 +1,6 @@
 'use client'
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, } from "lucide-react"
+import { Github, Linkedin, BookOpen, FileUser } from "lucide-react"
 import { motion } from "motion/react"
 import LeetcodeIcon from './leet-code'
 import {
@@ -78,7 +78,7 @@ export default function HeroSection() {
                 >
                     <motion.h2
                         variants={itemVariants}
-                        className="text-3xl font-black text-white xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-left"
+                        className="text-3xl font-black dark:text-white text-blue xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-left"
                     >
                         Hello, I&apos;m <span className="text-orange-400">Dwiki</span>
                         <br />
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
                     <motion.p
                         variants={itemVariants}
-                        className="xs:text-lg lg:text-xl xl:max-w-xl text-gray-300"
+                        className="xs:text-lg lg:text-xl xl:max-w-xl dark:text-gray-300 text-gray-500"
                     >
                         A frontend engineer who loves creating awesome web experiences with Next.js. Right now, I&apos;m diving into Swift at the <span className="text-blue-300">Apple Developer Academy</span> in Bali.
 
@@ -109,7 +109,7 @@ export default function HeroSection() {
                                 className="w-full bg-blue-600 hover:bg-blue-700"
                                 onClick={() => window.open('https://drive.google.com/file/d/1wKyyBXpOTRUwBKlLtJJoUwp_BQgeLonr/view?usp=sharing')}
                             >
-                                Resume
+                                Resume <FileUser />
                             </Button>
                         </motion.div>
                         <motion.div
@@ -118,7 +118,7 @@ export default function HeroSection() {
                             className="w-full"
                         >
                             <Button variant="outline" size="lg" className="w-full" onClick={() => window.open('https://dev.to/dwikis17')}>
-                                Posts
+                                Read Article <BookOpen />
                             </Button>
                         </motion.div>
                     </motion.div>

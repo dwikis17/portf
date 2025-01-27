@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 body {
-  background: rgb(19, 19, 19);
-  background: linear-gradient(90deg, rgba(19, 19, 19, 1) 0%, rgba(38, 38, 38, 1) 100%, rgba(0, 212, 255, 1) 100%);
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 360 100% 100%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
@@ -38,7 +37,8 @@ body {
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: linear-gradient(90deg, rgba(19, 19, 19, 1) 0%, rgba(38, 38, 38, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    --foreground: 210 40% 98%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -62,6 +62,10 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  .dark body {
+    background: linear-gradient(90deg, rgba(19, 19, 19, 1) 0%, rgba(38, 38, 38, 1) 100%, rgba(0, 212, 255, 1) 100%);
   }
 }
 
