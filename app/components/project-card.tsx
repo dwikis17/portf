@@ -20,7 +20,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, image, technologies, githubLink, liveLink }: ProjectCardProps) {
     return (
-        <Card className="overflow-hidden border-0 h-full dark  ">
+        <Card className="overflow-hidden border-0 h-full dark:dark  ">
             <div className="relative" style={{ height: "300px", width: "100%" }}>
                 <Image src={image} alt={title} fill style={{ objectFit: "cover" }} />
             </div>

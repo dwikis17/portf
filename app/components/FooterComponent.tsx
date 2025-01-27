@@ -5,7 +5,7 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="text-center md:text-left mb-8 md:mb-0">
                         <h3 className="text-xl font-bold text-orange-500 mb-2">Dwiki</h3>
-                        <p className="text-gray-400">Based in Jakarta</p>
+                        <p >Based in Jakarta</p>
                     </div>
                     <div className="flex space-x-6 text-gray-400">
                         <a href="#" className="hover:text-orange-500 transition-colors">

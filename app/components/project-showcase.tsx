@@ -52,15 +52,19 @@ export function ProjectShowcase() {
     return (
         <section id="projects" className="py-16 rounded-xl ">
             <div className="container mx-auto px-4">
-                <motion.h2
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
-                    className="text-3xl font-black text-[#6BD968] xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-center m-3"
-                >
-                    My Projects
-                </motion.h2>
+                <div className="mb-16 mx-auto">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6 }}
+                        className="text-4xl font-bold dark:text-white  mb text-center py-3 "
+                    >
+                        My Projects
+
+                    </motion.h2>
+                    <div className="w-20 h-1 bg-indigo-500 mx-auto"></div>
+                </div>
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"

@@ -78,7 +78,7 @@ export default function HeroSection() {
                 >
                     <motion.h2
                         variants={itemVariants}
-                        className="text-3xl font-black text-white xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-left"
+                        className="text-3xl font-black dark:text-white text-blue xs:text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl text-left"
                     >
                         Hello, I&apos;m <span className="text-orange-400">Dwiki</span>
                         <br />
@@ -87,7 +87,7 @@ export default function HeroSection() {
 
                     <motion.p
                         variants={itemVariants}
-                        className="xs:text-lg lg:text-xl xl:max-w-xl text-gray-300"
+                        className="xs:text-lg lg:text-xl xl:max-w-xl dark:text-gray-300 text-gray-500"
                     >
                         A frontend engineer who loves creating awesome web experiences with Next.js. Right now, I&apos;m diving into Swift at the <span className="text-blue-300">Apple Developer Academy</span> in Bali.
 
