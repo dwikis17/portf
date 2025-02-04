@@ -89,8 +89,7 @@ export default function HeroSection() {
                         variants={itemVariants}
                         className="xs:text-lg lg:text-xl xl:max-w-xl dark:text-gray-300 text-gray-500"
                     >
-                        A frontend engineer who loves creating awesome web experiences with Next.js. Right now, I&apos;m diving into Swift at the <span className="text-blue-300">Apple Developer Academy</span> in Bali.
-
+                        A software engineer who loves creating awesome web experiences with Next.js.
 
                     </motion.p>
 
