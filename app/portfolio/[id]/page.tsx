@@ -244,8 +244,10 @@ export default function PortfolioDetail() {
                         </Link>
                         <div className="flex items-center gap-4">
                             <Badge variant="secondary">{project.year}</Badge>
+                            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                             {(project as any).link && (
                                 <Button size="sm" variant="outline" asChild>
+                                    {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                     <a href={(project as any).link} target="_blank" rel="noopener noreferrer">
                                         <ExternalLink className="w-4 h-4 mr-2" />
                                         Live Demo
