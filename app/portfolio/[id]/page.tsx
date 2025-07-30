@@ -16,15 +16,14 @@ const projectDetails = {
         client: "Sohnne",
         year: 2024,
         duration: "6 months",
-        tags: ["UI/UX", "React", "TypeScript", "Supabase", "Elysia.js", 'Tailwind',],
+        tags: ["UI/UX", "React", "TypeScript", "Supabase", "Elysia.js", "Tailwind"],
+        results: null,
         description:
-            "A full-stack e-commerce solution with user authentication, product management, and payment paypal integration.",
+            "A full-stack e-commerce solution with user authentication, product management, and payment PayPal integration.",
         challenge:
-            "The existing platform had a high bounce rate and low conversion rates. Users were struggling with navigation and the checkout process was overly complex. The platform was not responsive and did not have a good user experience. The platform was not responsive and did not have a good user experience.",
+            "The existing platform had a high bounce rate and low conversion rates. Users were struggling with navigation and the checkout process was overly complex. The platform was not responsive and did not have a good user experience.",
         solution:
             "We implemented a user-centered design approach, simplified the navigation structure, and streamlined the checkout process to reduce cart abandonment. We also implemented a responsive design and a good user experience.",
-        results:
-            "Achieved a 40% increase in conversion rates and 25% reduction in bounce rate within the first quarter after launch. The platform was a success and was used by many users. ",
         images: [
             "/sohnne.jpg",
             "/sohnne.jpg",
@@ -33,8 +32,130 @@ const projectDetails = {
             { id: "overview", title: "Project Overview" },
             { id: "challenge", title: "The Challenge" },
             { id: "solution", title: "Our Solution" },
-            { id: "process", title: "Design Process" },
-            { id: "results", title: "Results & Impact" },
+            { id: "gallery", title: "Image Gallery" },
+        ],
+    },
+    2: {
+        title: "iOS Valorant App",
+        client: "Valorant",
+        year: 2024,
+        duration: "1 month",
+        tags: ["Swift", "SwiftUI", "UIKit"],
+        description:
+            "A Swift UIKit mobile app built programmatically using collection views, scroll views, and tables, with data fetched via API calls. This is for my learning purpose.",
+        challenge:
+            "Creating a native iOS app that provides real-time Valorant game data and statistics while maintaining smooth performance and intuitive navigation. The app needed to handle complex data structures from the Valorant API and present them in an engaging way for mobile users.",
+        solution:
+            "Developed a native iOS application using Swift and UIKit with programmatic UI implementation. Implemented collection views for dynamic content display, scroll views for smooth navigation, and table views for organized data presentation. Integrated RESTful API calls to fetch real-time game data and implemented efficient data caching for optimal performance.",
+        results:
+            "Successfully delivered a performant iOS app that provides Valorant players with easy access to game statistics and information. The app features smooth animations, responsive design, and efficient data loading, enhancing the gaming experience for Valorant enthusiasts.",
+        images: [
+
+
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+        ],
+    },
+    3: {
+        title: "SNKI Quotation System",
+        client: "SNKI",
+        year: 2025,
+        duration: "3 months",
+        tags: ["Nextjs", "Tailwind", "TypeScript", "Shadcn/UI"],
+        description:
+            "A quotation system for SNKI, built with Nextjs, Tailwind, and TypeScript. It allows users to manage their quotations, invoices, payments, and track their orders.",
+        challenge:
+            "SNKI needed a comprehensive business management system to streamline their quotation and invoicing processes. The existing manual system was time-consuming, error-prone, and lacked proper tracking capabilities. The system needed to handle complex business logic while maintaining a user-friendly interface.",
+        solution:
+            "Built a modern web application using Next.js 14 with TypeScript for type safety and better development experience. Implemented a responsive design using Tailwind CSS and Shadcn/UI components for a professional look. Created a comprehensive dashboard for managing quotations, generating invoices, tracking payments, and monitoring order status. Integrated secure authentication and role-based access control.",
+        results:
+            "The system significantly improved SNKI's operational efficiency by automating quotation generation and invoice management. Reduced processing time by 70% and eliminated manual errors. The platform is now live and actively used by the SNKI team for daily operations.",
+        images: [
+            "/snki.jpeg",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+        ],
+        link: "https://snki-quotation-fe-dev.vercel.app/login",
+    },
+    4: {
+        title: "Quickthought",
+        client: "Apple Academy 1st Project",
+        year: 2025,
+        duration: "1 month",
+        tags: ["Swift", "SwiftUI"],
+        description:
+            "A speed journaling app, built with Swift, SwiftUI. It allows users to journal their thoughts in a limited time span and a voice to text feature.",
+        challenge:
+            "Creating an engaging journaling experience that encourages users to write regularly by gamifying the process. The app needed to balance simplicity with functionality, providing a quick and intuitive way to capture thoughts while maintaining user engagement through time-based challenges.",
+        solution:
+            "Developed a SwiftUI-based iOS app that implements time-limited journaling sessions to create urgency and engagement. Integrated voice-to-text functionality for hands-free journaling. Implemented a clean, minimalist interface that focuses on the writing experience. Added progress tracking and achievement system to motivate consistent usage.",
+        images: [
+            "/quickthought.png",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+        ],
+    },
+    5: {
+        title: "MomoRun",
+        client: "Apple Academy 2nd Project",
+        year: 2025,
+        duration: "1 month",
+        tags: ["Swift", "SwiftUI", "CoreMotion"],
+        description:
+            "A never ending running game, built with Swift, SwiftUI. It allows users to control the character to avoid obstacles using apple watch.",
+        challenge:
+            "Creating an engaging endless runner game that leverages Apple Watch integration for unique gameplay mechanics. The challenge was to design intuitive controls that work seamlessly between iPhone and Apple Watch while maintaining smooth gameplay and engaging progression systems. and also we wanted to make the game to be isometric view so its like 3d",
+        solution:
+            `iOS Game with Apple Watch
+Built a cross-platform iOS game using SwiftUI and CoreMotion that connects to Apple Watch. Created gesture controls on the watch to move characters and avoid obstacles. The game is an endless runner with randomly generated obstacles that get harder over time.
+Added health tracking through HealthKit to encourage users to stay active. Built a system to place game blocks correctly for the isometric 3D view. Set up HealthKit sessions to keep the Apple Watch connected throughout gameplay.
+The game works smoothly across iPhone and Apple Watch, with real-time motion controls and health data tracking. Used procedural generation for obstacles and created custom positioning calculations for the 3D game world.`,
+        results:
+            "Successfully delivered an innovative gaming experience that bridges iPhone and Apple Watch. The game encourages physical activity while providing entertainment, making it a unique fitness-gaming hybrid. The seamless cross-device integration received positive user feedback.",
+        images: [
+            "/momo.png",
+            "/move.png",
+            "/move2.png",
+            "/move3.png",
+            "/move4.png",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+            { id: "gallery", title: "Image Gallery" },
+        ],
+    },
+    6: {
+        title: "Boco",
+        client: "Apple Academy 3rd Project",
+        year: 2025,
+        duration: "1 month",
+        tags: ["Swift", "SwiftUI", "HealthKit", 'LLama3'],
+        description:
+            "A body composition tracker built with Swift and SwiftUI, enabling users to monitor their progress over time. Features include image-to-text extraction for easy data entry and seamless integration with Apple Health.",
+        challenge:
+            "Creating a comprehensive health tracking app that simplifies the process of monitoring body composition data. The challenge was to make data entry effortless while providing meaningful insights and maintaining privacy standards required for health applications.",
+        solution:
+            "Built a SwiftUI-based iOS app with HealthKit integration for secure health data management. Implemented image-to-text extraction using Vision framework for easy data entry from photos. Created intuitive data visualization and progress tracking features. Ensured compliance with Apple's health data privacy guidelines while providing comprehensive analytics.",
+        results:
+            "Delivered a user-friendly health tracking application that makes body composition monitoring accessible and engaging. The image-to-text feature significantly reduces data entry friction, while HealthKit integration ensures data security and seamless health ecosystem integration.",
+        images: [
+            "/bocoo.png",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
             { id: "gallery", title: "Image Gallery" },
         ],
     },
@@ -123,10 +244,14 @@ export default function PortfolioDetail() {
                         </Link>
                         <div className="flex items-center gap-4">
                             <Badge variant="secondary">{project.year}</Badge>
-                            <Button size="sm" variant="outline">
-                                <ExternalLink className="w-4 h-4 mr-2" />
-                                Live Demo
-                            </Button>
+                            {(project as any).link && (
+                                <Button size="sm" variant="outline" asChild>
+                                    <a href={(project as any).link} target="_blank" rel="noopener noreferrer">
+                                        <ExternalLink className="w-4 h-4 mr-2" />
+                                        Live Demo
+                                    </a>
+                                </Button>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -230,75 +355,7 @@ export default function PortfolioDetail() {
                         </section>
 
                         {/* Design Process */}
-                        <section id="process" className="scroll-mt-24">
-                            <h2 className="text-3xl font-bold mb-6">Design Process</h2>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <Card>
-                                    <CardContent className="p-6">
-                                        <h3 className="font-semibold mb-3">Research & Discovery</h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            Conducted user interviews and analyzed existing user behavior to identify pain points and
-                                            opportunities.
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                                <Card>
-                                    <CardContent className="p-6">
-                                        <h3 className="font-semibold mb-3">Wireframing & Prototyping</h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            Created low-fidelity wireframes and interactive prototypes to test user flows and validate
-                                            concepts.
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                                <Card>
-                                    <CardContent className="p-6">
-                                        <h3 className="font-semibold mb-3">Visual Design</h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            Developed a cohesive visual language that aligns with brand guidelines and enhances user
-                                            experience.
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                                <Card>
-                                    <CardContent className="p-6">
-                                        <h3 className="font-semibold mb-3">Testing & Iteration</h3>
-                                        <p className="text-sm text-muted-foreground">
-                                            Conducted usability testing sessions and iterated on the design based on user feedback and
-                                            analytics.
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </section>
 
-                        {/* Results */}
-                        <section id="results" className="scroll-mt-24">
-                            <h2 className="text-3xl font-bold mb-6">Results & Impact</h2>
-                            <div className="prose prose-lg max-w-none">
-                                <p className="text-muted-foreground leading-relaxed mb-6">{project.results}</p>
-                                <div className="grid md:grid-cols-3 gap-6">
-                                    <Card>
-                                        <CardContent className="p-6 text-center">
-                                            <div className="text-3xl font-bold text-primary mb-2">40%</div>
-                                            <div className="text-sm text-muted-foreground">Increase in Conversion Rate</div>
-                                        </CardContent>
-                                    </Card>
-                                    <Card>
-                                        <CardContent className="p-6 text-center">
-                                            <div className="text-3xl font-bold text-primary mb-2">25%</div>
-                                            <div className="text-sm text-muted-foreground">Reduction in Bounce Rate</div>
-                                        </CardContent>
-                                    </Card>
-                                    <Card>
-                                        <CardContent className="p-6 text-center">
-                                            <div className="text-3xl font-bold text-primary mb-2">60%</div>
-                                            <div className="text-sm text-muted-foreground">Faster Checkout Process</div>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </div>
-                        </section>
 
                         {/* Image Gallery */}
                         <section id="gallery" className="scroll-mt-24">

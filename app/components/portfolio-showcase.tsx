@@ -50,7 +50,7 @@ const portfolioData = [
                 title: "Quickthought",
                 description:
                     "A speed journaling app, built with Swift, SwiftUI. It allows users to journal their thoughts in a limited time span and a voice to text feature",
-                image: "/ios.jpg",
+                image: "/quickthought.png",
                 tags: ["Swift", "SwiftUI"],
                 client: "Apple Academy 1st Project",
             },
@@ -59,7 +59,7 @@ const portfolioData = [
                 title: "MomoRun",
                 description:
                     "A never ending running game, built with Swift, SwiftUI. It allows users to control the character to avoid obstacles using apple watch",
-                image: "/apple.jpg",
+                image: "/momo.png",
                 tags: ["Swift", "SwiftUI", 'CoreMotion'],
                 client: "Apple Academy 2nd Project",
             },
@@ -68,7 +68,7 @@ const portfolioData = [
                 title: "Boco",
                 description:
                     "A body composition tracker built with Swift and SwiftUI, enabling users to monitor their progress over time. Features include image-to-text extraction for easy data entry and seamless integration with Apple Health.",
-                image: "/apple.jpg",
+                image: "/bocoo.png",
                 tags: ["Swift", "SwiftUI", 'HealthKit'],
                 client: "Apple Academy 3rd Project",
             },
