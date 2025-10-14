@@ -37,6 +37,29 @@ const portfolioData = [
         projects: [
             {
                 id: 3,
+                title: "Findect",
+                client: "Apple Academy 4th Project",
+                year: 2025,
+                duration: "3 months",
+                tags: ["Node.js", "Express", "TypeScript", "Prisma", "FastAPI", "Python", "PostgreSQL", "Pinecone", "OpenAI GPT-4o-mini", "Swift", "SwiftUI", "JWT"],
+                description:
+                    "Findect is a matchmaking app for professional networking events. Unlike random pairing tools, it uses semantic search and LLM reasoning to recommend the top three most compatible attendees for each participant — complete with natural-language explanations of why those matches make sense.",
+                challenge:
+                    "We spoke to many digital nomads and community companies in Bali to understand their needs and pain points. We stumbled upon Tyrone Williams who was a CEO and had the ability to match people who had problems and he would pair them up with people who could solve those problems. That was essentially his whole business model. We also know other companies who essentially did the same thing.",
+                solution:
+                    "We built Findect, an iOS app that intelligently matches attendees based on their goals, professions, and interests. Our architecture combines a Node.js REST API (Express + PostgreSQL) for event and attendee management with a Python FastAPI service for AI-powered reasoning and vector search. I served as the AI & backend systems engineer, responsible for the entire FastAPI and semantic search layer, including the RAG pipeline, Pinecone integration, and LLM reasoning optimization.",
+                results:
+                    "We showcased our work during an exhibition and got to use our app live at the event itself. People were able to be referred to other people at the event and formed new connections. This project gave me deep experience in multi-service orchestration, semantic retrieval, and LLM-powered backend design.",
+                image: "/findect1.png",
+                sections: [
+                    { id: "overview", title: "Project Overview" },
+                    { id: "challenge", title: "The Challenge" },
+                    { id: "solution", title: "Our Solution" },
+                ],
+                link: "https://github.com/RafieAmandio/CH-4",
+            },
+            {
+                id: 4,
                 title: "SNKI Quotation System",
                 description:
                     "A quotation system for SNKI, built with Nextjs, Tailwind, and TypeScript. It allows users to manage their quotations,invoices, payments, and track their orders.",
@@ -45,8 +68,9 @@ const portfolioData = [
                 client: "SNKI",
                 link: "https://snki-quotation-fe-dev.vercel.app/login",
             },
+
             {
-                id: 4,
+                id: 5,
                 title: "Quickthought",
                 description:
                     "A speed journaling app, built with Swift, SwiftUI. It allows users to journal their thoughts in a limited time span and a voice to text feature",
@@ -55,7 +79,7 @@ const portfolioData = [
                 client: "Apple Academy 1st Project",
             },
             {
-                id: 5,
+                id: 6,
                 title: "MomoRun",
                 description:
                     "A never ending running game, built with Swift, SwiftUI. It allows users to control the character to avoid obstacles using apple watch",
@@ -64,7 +88,7 @@ const portfolioData = [
                 client: "Apple Academy 2nd Project",
             },
             {
-                id: 6,
+                id: 7,
                 title: "Boco",
                 description:
                     "A body composition tracker built with Swift and SwiftUI, enabling users to monitor their progress over time. Features include image-to-text extraction for easy data entry and seamless integration with Apple Health.",
@@ -77,8 +101,8 @@ const portfolioData = [
 ]
 
 export default function PortfolioShowcase() {
-    const [activeYear, setActiveYear] = useState(2024)
-    const years = portfolioData.map((item) => item.year).sort((a, b) => b - a)
+    const [activeYear, setActiveYear] = useState(2025)
+    const years = portfolioData.map((item) => item.year).sort((a, b) => a - b)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -152,7 +176,7 @@ export default function PortfolioShowcase() {
 
             {/* Portfolio Content */}
             <main className="container mx-auto px-4 py-8">
-                {portfolioData.map((yearData) => (
+                {portfolioData.sort((a, b) => b.year - a.year).map((yearData) => (
                     <section key={yearData.year} id={`year-${yearData.year}`} className="mb-16 scroll-mt-32">
                         <div className="flex items-center gap-4 mb-8">
                             <h2 className="text-4xl font-bold">{yearData.year}</h2>
@@ -214,14 +238,6 @@ export default function PortfolioShowcase() {
                 ))}
             </main>
 
-            {/* Footer */}
-            <footer className="border-t bg-muted/30">
-                <div className="container mx-auto px-4 py-8">
-                    <div className="text-center text-muted-foreground">
-                        <p>© 2024 Portfolio Showcase. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
         </div>
     )
 }
