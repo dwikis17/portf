@@ -307,6 +307,30 @@ The game works smoothly across iPhone and Apple Watch, with real-time motion con
             { id: "gallery", title: "Image Gallery" },
         ]
     },
+    9: {
+        title: "Revalue Academy",
+        client: "Revalue Academy",
+        year: 2025,
+        duration: "3 months",
+        tags: ["Swift", "SwiftUI", "Clean Architecture", "MVVM", "Dependency Injection", "Vdocipher"],
+        description:
+            "An iOS learning platform for Revalue Academy, built with Clean Architecture, MVVM, and Dependency Injection to ensure scalability and testability. Features secure video playback using Vdocipher.",
+        challenge:
+            "The client needed a robust and scalable iOS application to deliver educational content securely. Key challenges included ensuring video security to prevent piracy and maintaining a clean codebase that could easily accommodate future features.",
+        solution:
+            "Implemented a modular iOS application using Clean Architecture to separate concerns and improve testability. Utilized MVVM for the presentation layer and Dependency Injection for loosely coupled components. Integrated Vdocipher SDK for DRM-protected video streaming, ensuring content security.",
+        results:
+            "Delivered a high-quality, secure educational app that provides a smooth learning experience. The Clean Architecture approach has made maintenance and new feature implementation significantly more efficient.",
+        images: [
+            "/revalue1.png",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+        ],
+        link: "https://revalueacademy.id/",
+    },
 }
 
 export default function PortfolioDetail() {

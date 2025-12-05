@@ -36,6 +36,16 @@ const portfolioData = [
         year: 2025,
         projects: [
             {
+                id: 9,
+                title: "Revalue Academy iOS | Project Based",
+                description:
+                    "An iOS learning platform built with Clean Architecture, MVVM, and Vdocipher for secure video playback.",
+                image: "/revalue1.png",
+                tags: ["Swift", "SwiftUI", "Clean Architecture"],
+                client: "Revalue Academy",
+                link: "https://revalueacademy.id/",
+            },
+            {
                 id: 8,
                 title: "Eyespeak | Assistive Tech",
                 description:

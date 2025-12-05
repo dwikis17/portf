@@ -30,7 +30,15 @@ const projects = [
         githubLink: "",
         liveLink: "https://apps.apple.com/id/app/eyespeak-assistive-tech/id6755292635"
     },
-
+    {
+        title: "Revalue Academy",
+        description:
+            "An iOS learning platform built with Clean Architecture, MVVM, and Vdocipher for secure video playback.",
+        image: '/placeholder.svg',
+        technologies: ["Swift", "SwiftUI", "Clean Architecture"],
+        githubLink: "",
+        liveLink: "https://revalueacademy.id/",
+    },
 ]
 
 export function ProjectShowcase() {
