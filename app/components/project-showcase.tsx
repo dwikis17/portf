@@ -21,6 +21,15 @@ const projects = [
         githubLink: "https://github.com/dwikis17/valorant-app-swift",
         liveLink: "",
     },
+    {
+        title: "Eyespeak | Assistive Tech",
+        description:
+            "An iPadOS AAC device that empowers people with motor neuron diseases to communicate again. Uses advanced ARKit facial recognition to control a full communication board through natural expressions—winks, eyebrow raises, puckers, and more.",
+        image: '/placeholder.svg',
+        technologies: ["Swift", "SwiftUI", "ARKit", "SwiftData", "iPadOS"],
+        githubLink: "",
+        liveLink: "https://apps.apple.com/id/app/eyespeak-assistive-tech/id6755292635"
+    },
 
 ]
 
