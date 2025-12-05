@@ -270,6 +270,67 @@ The game works smoothly across iPhone and Apple Watch, with real-time motion con
             { id: "gallery", title: "Image Gallery" },
         ],
     },
+    8: {
+        title: "Eyespeak | Assistive Tech",
+        client: "Apple Academy 5th Project",
+        year: 2025,
+        duration: "1 month",
+        tags: ["Swift", "SwiftUI", "ARKit", "SwiftData", "iPadOS", "AAC"],
+        description:
+            "An iPadOS AAC (Augmentative and Alternative Communication) device that empowers people with motor neuron diseases to communicate again. Uses advanced ARKit facial recognition to control a full communication board through natural expressions—winks, eyebrow raises, puckers, and more. Features combo inputs for enhanced accessibility and SwiftData for persistent storage.",
+        challenge:
+            "Creating an accessible communication solution for individuals with motor neuron diseases who have lost the ability to speak or use traditional input methods. The challenge was to develop an intuitive system that allows users to communicate effectively using only facial expressions, while ensuring reliability, speed, and ease of use. The app needed to work seamlessly on iPadOS and provide a full-featured AAC board experience.",
+        solution:
+            "Built an iPadOS app using SwiftUI and ARKit to detect and interpret facial expressions in real-time. Implemented a sophisticated combo input system that combines multiple facial gestures (winks, eyebrow raises, lip puckers) to create a comprehensive control scheme. Integrated SwiftData for persistent storage of user preferences, custom phrases, and communication boards. Created an intuitive AAC board interface with customizable phrases, quick replies, caregiver prompts, and emoji support. The facial recognition system processes natural expressions without requiring controllers or external devices, restoring independence and voice to users.",
+        technicalHighlights: [
+            "ARKit Facial Recognition: Real-time detection and interpretation of facial expressions including winks, eyebrow raises, and lip gestures",
+            "SwiftData Integration: Persistent storage for user preferences, custom AAC boards, and communication history",
+            "Combo Input System: Advanced gesture combination system allowing multiple facial expressions to trigger different actions",
+            "iPadOS Optimization: Designed specifically for iPad with optimized UI layouts and touch interactions",
+            "SwiftUI Architecture: Modern declarative UI framework for responsive and accessible interface design",
+            "Accessibility Features: Full VoiceOver support and customizable interaction settings for different user needs"
+        ],
+        myRole: "I served as the iOS Engineer.",
+        images: [
+            "/eyespeak1.svg",
+            "/eyespeak2.svg",
+            "/eyespeak3.svg",
+            "/eyespeak4.svg",
+            "/eyespeak5.jpeg"
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+            { id: "role", title: "My Role" },
+            { id: "technical", title: "Technical Highlights" },
+            { id: "gallery", title: "Image Gallery" },
+        ]
+    },
+    9: {
+        title: "Revalue Academy",
+        client: "Revalue Academy",
+        year: 2025,
+        duration: "3 months",
+        tags: ["Swift", "SwiftUI", "Clean Architecture", "MVVM", "Dependency Injection", "Vdocipher"],
+        description:
+            "An iOS learning platform for Revalue Academy, built with Clean Architecture, MVVM, and Dependency Injection to ensure scalability and testability. Features secure video playback using Vdocipher.",
+        challenge:
+            "The client needed a robust and scalable iOS application to deliver educational content securely. Key challenges included ensuring video security to prevent piracy and maintaining a clean codebase that could easily accommodate future features.",
+        solution:
+            "Implemented a modular iOS application using Clean Architecture to separate concerns and improve testability. Utilized MVVM for the presentation layer and Dependency Injection for loosely coupled components. Integrated Vdocipher SDK for DRM-protected video streaming, ensuring content security.",
+        results:
+            "Delivered a high-quality, secure educational app that provides a smooth learning experience. The Clean Architecture approach has made maintenance and new feature implementation significantly more efficient.",
+        images: [
+            "/revalue1.png",
+        ],
+        sections: [
+            { id: "overview", title: "Project Overview" },
+            { id: "challenge", title: "The Challenge" },
+            { id: "solution", title: "Our Solution" },
+        ],
+        link: "https://revalueacademy.id/",
+    },
 }
 
 export default function PortfolioDetail() {
@@ -446,7 +507,7 @@ export default function PortfolioDetail() {
                                             src={project.images[currentImageIndex] || "/placeholder.svg"}
                                             alt={`${project.title} - Image ${currentImageIndex + 1}`}
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                         />
                                         <div className="absolute inset-0 flex items-center justify-between p-4">
                                             <Button

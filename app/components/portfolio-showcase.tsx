@@ -36,6 +36,26 @@ const portfolioData = [
         year: 2025,
         projects: [
             {
+                id: 9,
+                title: "Revalue Academy iOS | Project Based",
+                description:
+                    "An iOS learning platform built with Clean Architecture, MVVM, and Vdocipher for secure video playback.",
+                image: "/revalue1.png",
+                tags: ["Swift", "SwiftUI", "Clean Architecture"],
+                client: "Revalue Academy",
+                link: "https://revalueacademy.id/",
+            },
+            {
+                id: 8,
+                title: "Eyespeak | Assistive Tech",
+                description:
+                    "An iPadOS AAC device that empowers people with motor neuron diseases to communicate again. Uses advanced ARKit facial recognition to control a full communication board through natural expressions—winks, eyebrow raises, puckers, and more.",
+                image: "/eyespeak1.svg",
+                tags: ["Swift", "SwiftUI", "ARKit", "SwiftData", "iPadOS", "AAC"],
+                client: "Apple Academy 5th Project",
+                link: "https://apps.apple.com/id/app/eyespeak-assistive-tech/id6755292635",
+            },
+            {
                 id: 3,
                 title: "Findect",
                 client: "Apple Academy 4th Project",
@@ -95,7 +115,7 @@ const portfolioData = [
                 image: "/bocoo.png",
                 tags: ["Swift", "SwiftUI", 'HealthKit'],
                 client: "Apple Academy 3rd Project",
-            },
+            }
         ],
     },
 ]
