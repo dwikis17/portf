@@ -115,7 +115,7 @@ export default function HeroSection() {
                                     variant="default"
                                     size="lg"
                                     className="w-full bg-blue-600 hover:bg-blue-700"
-                                    onClick={() => window.open('https://drive.google.com/file/d/1_NqNGL-QPuUAGob3cK36SUHLhPtprTZ3/view?usp=sharing')}
+                                    onClick={() => window.open('https://drive.google.com/file/d/1zvgQ1ot-Rd67KBEfv2OXcrQx3wA5yjpA/view?usp=sharing')}
                                 >
                                     Resume <FileUser />
                                 </Button>
