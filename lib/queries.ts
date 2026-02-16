@@ -72,8 +72,13 @@ export const queries = {
     return apiFetch<void>(`/api/projects/${id}`, { method: "DELETE" }, token);
   },
 
-  async listBlogs(): Promise<Blog[]> {
-    const response = await apiFetch<PaginatedResponse<Blog>>("/api/blogs?page=1&limit=100");
+  async listBlogs(categoryId?: string): Promise<Blog[]> {
+    const params = new URLSearchParams({ page: "1", limit: "100" });
+    if (categoryId) {
+      params.set("categoryId", categoryId);
+    }
+
+    const response = await apiFetch<PaginatedResponse<Blog>>(`/api/blogs?${params.toString()}`);
     return response.data;
   },
   async getBlog(id: string): Promise<Blog> {
@@ -139,4 +144,3 @@ export const queries = {
     return apiFetch<UploadResponse>("/api/uploads", { method: "POST", body: formData }, token);
   }
 };
-

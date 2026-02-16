@@ -23,7 +23,7 @@ export default function AdminBlogsPage() {
 
   const blogsQuery = useQuery({
     queryKey: queryKeys.blogs.list({ page: 1, limit: 100 }),
-    queryFn: queries.listBlogs
+    queryFn: () => queries.listBlogs()
   });
 
   const categoriesQuery = useQuery({

@@ -1,7 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { apiFetch, HttpError } from "@/lib/api";
 import { setTokenCookie } from "@/lib/auth";
@@ -12,21 +13,20 @@ export function LoginForm() {
   const [email, setEmail] = useState("dwikis17@gmail.com");
   const [password, setPassword] = useState("Password1!");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const loginMutation = useMutation({
+    mutationFn: async (payload: { email: string; password: string }) =>
+      apiFetch<LoginResponse>("/api/auth/login", {
+        method: "POST",
+        body: JSON.stringify(payload)
+      })
+  });
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrorMessage(null);
-    setIsSubmitting(true);
 
     try {
-      const response = await apiFetch<LoginResponse>("/api/auth/login", {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          password
-        })
-      });
+      const response = await loginMutation.mutateAsync({ email, password });
 
       setTokenCookie(response.token);
       router.push("/admin");
@@ -37,8 +37,6 @@ export function LoginForm() {
       } else {
         setErrorMessage("Unable to login. Please try again.");
       }
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -82,10 +80,10 @@ export function LoginForm() {
 
       <button
         type="submit"
-        disabled={isSubmitting}
+        disabled={loginMutation.isPending}
         className="mt-6 w-full rounded-xl border-2 border-zinc-950 bg-zinc-950 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {isSubmitting ? "Signing in..." : "Sign in"}
+        {loginMutation.isPending ? "Signing in..." : "Sign in"}
       </button>
     </form>
   );

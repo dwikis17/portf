@@ -1,3 +1,5 @@
+"use client";
+
 import type { CSSProperties } from "react";
 
 import { ProjectSectionsNav } from "@/components/projects/project-sections-nav";

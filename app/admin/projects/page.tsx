@@ -57,14 +57,16 @@ export default function AdminProjectsPage() {
     setErrorMessage(null);
 
     try {
+      const client = values.client?.trim() ? values.client.trim() : null;
+      const duration = values.duration?.trim() ? values.duration.trim() : null;
       const payload = {
         title: values.title.trim(),
         description: values.description,
         year: values.year,
         tags: values.tags,
         links: values.links,
-        client: values.client.trim() ? values.client.trim() : null,
-        duration: values.duration.trim() ? values.duration.trim() : null,
+        client,
+        duration,
         overviewHtml: values.overviewHtml,
         challengeHtml: values.challengeHtml,
         solutionHtml: values.solutionHtml,
