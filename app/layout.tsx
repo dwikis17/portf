@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
 import Script from "next/script";
+import { Suspense } from "react";
 
 import { GaPageTracker } from "@/components/analytics/ga-page-tracker";
 import { RootChrome } from "@/components/layout/root-chrome";
@@ -48,7 +49,9 @@ export default function RootLayout({
                   });
                 `}
               </Script>
-              <GaPageTracker />
+              <Suspense fallback={null}>
+                <GaPageTracker />
+              </Suspense>
             </>
           ) : null}
           <RootChrome />
