@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 
+import { trackEvent } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -11,13 +14,13 @@ const navItems = [
 
 export function Navbar({ className }: { className?: string }) {
   return (
-    < nav className={cn("pb-8 pt-4", className)}>
+    <nav className={cn("animate-fade-in pb-8 pt-4", className)}>
       <div className="mx-auto w-full max-w-6xl px-6">
-        <div className="rounded-[28px] border-4 border-zinc-950 bg-zinc-100 px-5 py-4 shadow-[0_3px_0_0_#09090b]">
+        <div className="card-hover rounded-[28px] border-4 border-zinc-950 bg-zinc-100 px-5 py-4 shadow-[0_3px_0_0_#09090b]">
           <div className="flex flex-wrap items-center gap-4 sm:gap-8">
             <Link
               href="/"
-              className="flex h-12 w-12 items-center justify-center rounded-full border-4 border-zinc-950 bg-white"
+              className="animate-pulse-ring flex h-12 w-12 items-center justify-center rounded-full border-4 border-zinc-950 bg-white"
               aria-label="Home"
             >
               <span className="h-5 w-5 rounded-full bg-zinc-950" />
@@ -34,11 +37,16 @@ export function Navbar({ className }: { className?: string }) {
                   {item.label === "Pages" ? <span className="ml-2 text-sm align-middle">v</span> : null}
                 </Link>
               ))}
-              <span className="text-base sm:text-2xl">Cart(0)</span>
             </nav>
 
             <Link
-              href="mailto:dwiki@example.com"
+              href="mailto:dev.dwiki@gmail.com"
+              onClick={() =>
+                trackEvent("contact_email_click", {
+                  location: "navbar",
+                  destination: "mailto:dev.dwiki@gmail.com"
+                })
+              }
               className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-950 text-white transition-colors hover:bg-zinc-800"
               aria-label="Email"
             >
