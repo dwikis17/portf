@@ -12,5 +12,5 @@ export function RootChrome() {
     return null;
   }
 
-  return <Navbar className="hidden pt-4 pb-8 lg:block" />;
+  return <Navbar className="pt-4 pb-8" />;
 }
