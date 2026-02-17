@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FileText } from "lucide-react";
+
 
 export default function Hero() {
     return (
@@ -45,10 +47,13 @@ export default function Hero() {
                         LinkedIn
                     </Link>
                     <Link
-                        href="/projects"
+                        href="https://docs.google.com/document/d/1Z6v9kQDksGQEFOS_w6tCsYxb-CWkYPu--aWAo1OJo4w/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-2xl border-[3px] border-zinc-950 bg-transparent px-8 py-4 text-lg font-semibold text-zinc-950 transition-all duration-300 hover:-translate-y-1 hover:bg-white"
+                        aria-label="View Resume"
                     >
-                        <span aria-hidden="true">◻</span>
+                        <FileText className="h-5 w-5" />
                         Resume
                     </Link>
                     <Link
