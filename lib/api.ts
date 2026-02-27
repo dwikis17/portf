@@ -13,6 +13,7 @@ export class HttpError extends Error {
 
 export const getApiBaseUrl = (): string => {
   const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  console.log(baseUrl, "BASE URLL");
 
   if (!baseUrl) {
     throw new Error("NEXT_PUBLIC_BACKEND_URL is not set");
