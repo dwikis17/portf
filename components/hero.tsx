@@ -18,7 +18,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="mt-8 max-w-2xl text-lg leading-relaxed text-zinc-700 animate-fade-up" style={{ animationDelay: "220ms" }}>
-                    Currently expanding into AI engineering, MLOps, LangChain, and LangGraph while building full-stack applications that leverage modern AI capabilities.
+                    Full-stack engineer (3+ years) who builds production systems from 0→1 and keeps them running. Specialized in Swift/SwiftUI and React/NextJS/React Native
                 </p>
 
                 <div className="mt-10 flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "320ms" }}>

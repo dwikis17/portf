@@ -17,7 +17,7 @@ const onest = Onest({
 
 export const metadata: Metadata = {
   title: "HeyDwiki | Portfolio & Journey Blog",
-  description: "Swiss-minimal portfolio, projects, and learning journal.",
+  description: "Dwiki's Portfolio & Journey Blog",
 };
 
 export default function RootLayout({
